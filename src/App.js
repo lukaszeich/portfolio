@@ -12,7 +12,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
     <div className="App">
-    <header className='header'><Header/></header>
+    {/* <header className='header'><Header/></header> */}
     <nav className='menu'><Menu/></nav>
     <main className='main'><Main/></main>
     <footer className='footer'><Footer/></footer>
