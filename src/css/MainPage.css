@@ -1,0 +1,30 @@
+.main .mainPage h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main .mainPage {
+    text-align: center;
+}
+
+.main .mainPage img {
+    animation: logoAnimation 5s infinite linear;
+    max-width: 100%;
+}
+
+.main .mainPage p {
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

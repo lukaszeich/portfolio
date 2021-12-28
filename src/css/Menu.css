@@ -1,5 +1,6 @@
 .menu ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -15,8 +16,4 @@
     text-decoration: none;
     color: #000;
     transition: .3s;
-}
-
-.menu a:hover {
-    font-size: 24px;
 }

@@ -3,13 +3,13 @@ import {NavLink} from 'react-router-dom'
 
 import '../css/Menu.css'
 
-const Menu = () => {
+const Menu = ({click}) => {
     return (
         <ul>
-            <li><NavLink to="/">Strona główna</NavLink></li>
-            <li><NavLink to="/about">O mnie</NavLink></li>
-            <li><NavLink to="/project1">To-Do App</NavLink></li>
-            <li><NavLink to="/project2">Kalkulator</NavLink></li>
+            <li><NavLink to="/" onClick={click}>Home Page</NavLink></li>
+            <li><NavLink to="/about" onClick={click}>About me</NavLink></li>
+            <li><NavLink to="/project1" onClick={click}>To-Do App</NavLink></li>
+            <li><NavLink to="/project2" onClick={click}>Calculator App</NavLink></li>
         </ul>
     )
 }

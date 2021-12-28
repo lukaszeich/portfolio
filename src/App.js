@@ -1,23 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, {useState} from 'react';
+
 
 import Footer from './page_layout/Footer'
-import Header from './page_layout/Header';
 import Main from './page_layout/Main'
 import Menu from './page_layout/Menu'
 
 import './css/App.css'
 
 function App() {
+
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(prevState => !prevState)
+  }
+
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    
     <div className="App">
-    {/* <header className='header'><Header/></header> */}
-    <nav className='menu'><Menu/></nav>
-    <main className='main'><Main/></main>
+    <nav className={active ? "menu active" : "menu"}>
+      <Menu click={handleClick}/>
+      <div className={active ? "menuButton active" : "menuButton"} onClick={handleClick}><i className="fas fa-bars"></i></div>
+    </nav>
+    <main className={active? "main active" : "main"}><Main/></main>
     <footer className='footer'><Footer/></footer>
     </div>
-    </Router>
+
   );
 }
 

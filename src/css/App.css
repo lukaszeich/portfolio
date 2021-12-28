@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
   padding: 0;
@@ -7,36 +8,63 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .App {
   position: relative;
   background-image: url('../img/header.jpg');
   min-height: 100vh;
+  overflow-x: hidden;
 }
-
-/* .header {
-  flex-basis: 35vh;
-  position: relative;
-  background-color: #aaa;
-  overflow: hidden;
-} */
 
 .menu {
-  position: absolute;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
+  position: fixed;
+  right: -200px;
+  top: 30px;
+  width: 200px;
   background-color: rgba(255, 255, 255, .3);
-  /* border-bottom: 8px solid #000; */
   border-radius: 20px;
+  transition: .3s;
 }
 
-/* .main {} */
+.menu.active {
+  right: 20px;
+}
+
+.menuButton {
+  position: absolute;
+  left: -70px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .3);
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  position: absolute;
+  left: 20px;
+  right: 100px;
+  top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.main.active {
+  right: 320px;
+}
 
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

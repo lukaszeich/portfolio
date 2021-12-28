@@ -10,10 +10,11 @@ import Project2 from '../pages/Project2'
 const Main = () => {
     return (
         <Routes>
-            <Route path="/" element={<MainPage/>} />
+            <Route exact path="/" element={<MainPage/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/project1" element={<Project1/>} />
             <Route path="/project2" element={<Project2/>} />
+            <Route path="*" element={<Project1/>} />
         </Routes>
     )
 }

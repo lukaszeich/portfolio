@@ -1,0 +1,57 @@
+.main .about h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main .about {
+    text-align: center;
+}
+
+.main .about p {
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main .about .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .main .about .skills {
+        flex-direction: column;
+    }
+}
+
+.main .about .knowledge {
+    flex-basis: 25%;
+    padding-bottom: 40px;
+}
+
+.main .about .knowledge .skill {
+    display: block;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.main .about .knowledge .black {
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+}
+
+.main .about .knowledge .transparent {
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+}

@@ -1,0 +1,93 @@
+.main .project1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.main .project1 h2 {
+    padding-bottom: 20px;
+}
+
+.main .project1 form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+}
+
+.main .project1 input {
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.main .project1 button {
+    background-color: rgba(0, 0, 0, .5);
+    border: 3px solid #000;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main .project1 .submitTask {
+    margin: 20px auto;
+    padding: 10px 30px;
+}
+
+.main .project1 .finishTask {
+    font-size: 10px;
+    padding: 5px 15px;
+    margin-right: 10px;
+}
+
+.main .project1 .deleteTask {
+    font-size: 10px;
+    padding: 5px 15px;
+}
+
+.main .project1 ul {
+    list-style: none;
+}
+
+.main .project1 li.active {
+    padding: 10px 0;
+    border-bottom: black solid 1px;
+}
+
+.main .project1 li.finished {
+    padding: 10px 0;
+}
+
+.main .project1 .taskName {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main .project1 .taskDate {
+    font-size: 15px;
+}
+
+.main .project1 .taskID {
+    font-size: 11px;
+}
+
+.main .project1 .listOfTasks {
+    display: flex;
+    padding: 20px;
+}
+
+.main .project1 .activeTasks {
+    flex-basis: 50%;
+}
+
+.main .project1 .doneTasks {
+    flex-basis: 50%;
+}
+
+@media (max-width:600px) {
+    .main .project1 .listOfTasks {
+        flex-direction: column;
+    }
+
+    .main .project1 .activeTasks {
+        padding-bottom: 20px;
+    }
+
+}
