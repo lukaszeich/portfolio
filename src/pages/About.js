@@ -14,7 +14,7 @@ const About = () => {
         <p className='skill'>HTML5</p>
         <div className='black'></div>
         <div className='black'></div>
-        <div className='transparent'></div>
+        <div className='black'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>
       </div>
@@ -23,7 +23,7 @@ const About = () => {
         <p className='skill'>CSS</p>
         <div className='black'></div>
         <div className='black'></div>
-        <div className='transparent'></div>
+        <div className='black'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>
       </div>
@@ -40,7 +40,7 @@ const About = () => {
       <div className='knowledge'>
         <p className='skill'>React.js</p>
         <div className='black'></div>
-        <div className='transparent'></div>
+        <div className='black'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>
@@ -48,7 +48,7 @@ const About = () => {
 
       <div className='knowledge'>
         <p className='skill'>Node.js</p>
-        <div className='transparent'></div>
+        <div className='black'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>
         <div className='transparent'></div>

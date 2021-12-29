@@ -21,13 +21,13 @@ const Project2 = () => {
         }
       } else if (type === 'equal') {
         if (mathOperation === "+") {
-          setLastOperation(`Wynik ostatniego działania: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) + Number(numberToStringValue)}`)
+          setLastOperation(`Last result: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) + Number(numberToStringValue)}`)
         } else if (mathOperation === "-") {
-          setLastOperation(`Wynik ostatniego działania: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) - Number(numberToStringValue)}`)
+          setLastOperation(`Last result: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) - Number(numberToStringValue)}`)
         } else if (mathOperation === "*") {
-          setLastOperation(`Wynik ostatniego działania: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) * Number(numberToStringValue)}`)
+          setLastOperation(`Last result: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) * Number(numberToStringValue)}`)
         } else if (mathOperation === "/") {
-          setLastOperation(`Wynik ostatniego działania: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) / Number(numberToStringValue)}`)
+          setLastOperation(`Last result: ${numberInMemory} ${mathOperation} ${numberToStringValue} = ${Number(numberInMemory) / Number(numberToStringValue)}`)
         }
         setNumberToStringValue("0");
         setMathOperation("");
