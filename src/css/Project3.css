@@ -1,0 +1,43 @@
+.main .project3 {
+    text-align: center;
+}
+
+.main .project3 .executeDate {
+    padding-bottom: 20px;
+}
+
+.main .project3 .currency {
+    margin: 0 auto;
+    display: flex;
+    max-width: 300px;
+    font-size: 40px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.main .project3 .currency:nth-last-of-type(1) {
+    border-bottom: 2px solid black;
+}
+
+.main .project3 .curCode {
+    flex-basis: 80px;
+    border-right: 2px solid black;
+}
+
+.main .project3 .flag {
+    position: relative;
+    flex-basis: 40px;
+}
+
+.main .project3 .flag img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .project3 .rate {
+    flex-grow: 1;
+    border-left: 2px solid black;
+}
