@@ -4,7 +4,7 @@ const Currency = ({curCode, flagCode}) => {
 
     const [currencyValue, setCurrencyValue] = useState('');
 
-    fetch(`http://api.nbp.pl/api/exchangerates/rates/a/${curCode}/?format=json`)
+    fetch(`https://api.nbp.pl/api/exchangerates/rates/a/${curCode}/?format=json`)
     .then(res => res.json())
     .then(data => setCurrencyValue(data.rates[0].mid))
     .catch(err => console.log(err));

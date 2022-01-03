@@ -7,7 +7,7 @@ const Project3 = () => {
 
     const [effectiveDate, setEffectiveDate] = useState('');
 
-    fetch('http://api.nbp.pl/api/exchangerates/tables/C/?format=json')
+    fetch('https://api.nbp.pl/api/exchangerates/tables/C/?format=json')
     .then(res => res.json())
     .then(data => setEffectiveDate(data[0].effectiveDate))
     .catch(err => console.log(err))
